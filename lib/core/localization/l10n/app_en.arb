@@ -3352,9 +3352,21 @@
   "@settings_sync_webDavUrlLabel": {
     "description": "Label for the WebDAV URL field."
   },
-  "settings_sync_webDavUrlPlaceholder": "https://example.com/dav/mono-dash/",
+  "settings_sync_webDavUrlPlaceholder": "https://example.com/dav/",
   "@settings_sync_webDavUrlPlaceholder": {
     "description": "Placeholder for the WebDAV URL field."
+  },
+  "settings_sync_webDavPathLabel": "Sync file path",
+  "@settings_sync_webDavPathLabel": {
+    "description": "Label for the WebDAV sync file path field."
+  },
+  "settings_sync_webDavPathHint": "Relative to the WebDAV URL; defaults to /mono-dash/data.json. The folder is created on first sync if needed.",
+  "@settings_sync_webDavPathHint": {
+    "description": "Explains how the WebDAV sync folder is selected."
+  },
+  "settings_sync_webDavPathInvalid": "Enter a file path starting with /",
+  "@settings_sync_webDavPathInvalid": {
+    "description": "Validation error for the WebDAV sync file path."
   },
   "settings_sync_webDavUsernameLabel": "Username",
   "@settings_sync_webDavUsernameLabel": {
@@ -3371,6 +3383,14 @@
   "settings_sync_webDavPasswordPlaceholder": "Optional",
   "@settings_sync_webDavPasswordPlaceholder": {
     "description": "Placeholder for the WebDAV password field."
+  },
+  "settings_sync_webDavShowPassword": "Show password",
+  "@settings_sync_webDavShowPassword": {
+    "description": "Accessibility label for the WebDAV password visibility button."
+  },
+  "settings_sync_webDavHidePassword": "Hide password",
+  "@settings_sync_webDavHidePassword": {
+    "description": "Accessibility label for the WebDAV password visibility button."
   },
   "settings_sync_webDavUrlInvalid": "Enter a valid http or https URL",
   "@settings_sync_webDavUrlInvalid": {

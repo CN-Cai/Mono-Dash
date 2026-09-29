@@ -2454,8 +2454,18 @@ class AppLocalizationsEn extends AppLocalizations {
   String get settings_sync_webDavUrlLabel => 'WebDAV URL';
 
   @override
-  String get settings_sync_webDavUrlPlaceholder =>
-      'https://example.com/dav/mono-dash/';
+  String get settings_sync_webDavUrlPlaceholder => 'https://example.com/dav/';
+
+  @override
+  String get settings_sync_webDavPathLabel => 'Sync file path';
+
+  @override
+  String get settings_sync_webDavPathHint =>
+      'Relative to the WebDAV URL; defaults to /mono-dash/data.json. The folder is created on first sync if needed.';
+
+  @override
+  String get settings_sync_webDavPathInvalid =>
+      'Enter a file path starting with /';
 
   @override
   String get settings_sync_webDavUsernameLabel => 'Username';
@@ -2468,6 +2478,12 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get settings_sync_webDavPasswordPlaceholder => 'Optional';
+
+  @override
+  String get settings_sync_webDavShowPassword => 'Show password';
+
+  @override
+  String get settings_sync_webDavHidePassword => 'Hide password';
 
   @override
   String get settings_sync_webDavUrlInvalid =>

@@ -2383,8 +2383,17 @@ class AppLocalizationsZh extends AppLocalizations {
   String get settings_sync_webDavUrlLabel => 'WebDAV 地址';
 
   @override
-  String get settings_sync_webDavUrlPlaceholder =>
-      'https://example.com/dav/mono-dash/';
+  String get settings_sync_webDavUrlPlaceholder => 'https://example.com/dav/';
+
+  @override
+  String get settings_sync_webDavPathLabel => '同步文件路径';
+
+  @override
+  String get settings_sync_webDavPathHint =>
+      '相对于 WebDAV 地址；默认 /mono-dash/data.json。首次同步时会尝试创建目录。';
+
+  @override
+  String get settings_sync_webDavPathInvalid => '请输入以 / 开头的文件路径';
 
   @override
   String get settings_sync_webDavUsernameLabel => '用户名';
@@ -2397,6 +2406,12 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get settings_sync_webDavPasswordPlaceholder => '可留空';
+
+  @override
+  String get settings_sync_webDavShowPassword => '显示密码';
+
+  @override
+  String get settings_sync_webDavHidePassword => '隐藏密码';
 
   @override
   String get settings_sync_webDavUrlInvalid => '请输入有效的 http 或 https 地址';

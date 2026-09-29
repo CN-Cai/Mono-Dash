@@ -4535,8 +4535,26 @@ abstract class AppLocalizations {
   /// Placeholder for the WebDAV URL field.
   ///
   /// In en, this message translates to:
-  /// **'https://example.com/dav/mono-dash/'**
+  /// **'https://example.com/dav/'**
   String get settings_sync_webDavUrlPlaceholder;
+
+  /// Label for the WebDAV sync file path field.
+  ///
+  /// In en, this message translates to:
+  /// **'Sync file path'**
+  String get settings_sync_webDavPathLabel;
+
+  /// Explains how the WebDAV sync folder is selected.
+  ///
+  /// In en, this message translates to:
+  /// **'Relative to the WebDAV URL; defaults to /mono-dash/data.json. The folder is created on first sync if needed.'**
+  String get settings_sync_webDavPathHint;
+
+  /// Validation error for the WebDAV sync file path.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a file path starting with /'**
+  String get settings_sync_webDavPathInvalid;
 
   /// Label for the WebDAV username field.
   ///
@@ -4561,6 +4579,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Optional'**
   String get settings_sync_webDavPasswordPlaceholder;
+
+  /// Accessibility label for the WebDAV password visibility button.
+  ///
+  /// In en, this message translates to:
+  /// **'Show password'**
+  String get settings_sync_webDavShowPassword;
+
+  /// Accessibility label for the WebDAV password visibility button.
+  ///
+  /// In en, this message translates to:
+  /// **'Hide password'**
+  String get settings_sync_webDavHidePassword;
 
   /// Validation message for an invalid WebDAV URL.
   ///
