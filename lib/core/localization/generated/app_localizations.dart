@@ -7934,6 +7934,150 @@ abstract class AppLocalizations {
   /// **'API Interface'**
   String get panelSettings_apiInterface;
 
+  /// Explains that session-only panel settings must be managed in the web panel.
+  ///
+  /// In en, this message translates to:
+  /// **'Manage this in the 1Panel web panel'**
+  String get panelSettings_webPanelRequired;
+
+  /// Label for the locally stored API connection key.
+  ///
+  /// In en, this message translates to:
+  /// **'Connection key saved in this app'**
+  String get panelSettings_localApiKey;
+
+  /// Shown when a firewall rule update fails due to a stale revision.
+  ///
+  /// In en, this message translates to:
+  /// **'This rule changed on the server. The list has been refreshed.'**
+  String get firewall_ruleStale;
+
+  /// Shown when the backend rejects a firewall rule that risks locking out the user.
+  ///
+  /// In en, this message translates to:
+  /// **'The firewall blocked this change because it could cut off panel access.'**
+  String get firewall_lockoutRisk;
+
+  /// Firewall service operation is still running.
+  ///
+  /// In en, this message translates to:
+  /// **'Operation in progress'**
+  String get firewall_operationInProgress;
+
+  /// Filter firewall rules by IP version.
+  ///
+  /// In en, this message translates to:
+  /// **'IP version'**
+  String get firewall_familyFilter;
+
+  /// Show firewall rules for all IP versions.
+  ///
+  /// In en, this message translates to:
+  /// **'All IP versions'**
+  String get firewall_allFamilies;
+
+  /// Firewall rule managed by 1Panel.
+  ///
+  /// In en, this message translates to:
+  /// **'Managed'**
+  String get firewall_stateManaged;
+
+  /// Firewall rule adopted by 1Panel.
+  ///
+  /// In en, this message translates to:
+  /// **'Adopted'**
+  String get firewall_stateAdopted;
+
+  /// Firewall rule not managed by 1Panel.
+  ///
+  /// In en, this message translates to:
+  /// **'External'**
+  String get firewall_stateExternal;
+
+  /// Firewall rule differs from its saved state.
+  ///
+  /// In en, this message translates to:
+  /// **'Changed'**
+  String get firewall_stateDrifted;
+
+  /// Firewall rule protected from changes.
+  ///
+  /// In en, this message translates to:
+  /// **'Protected'**
+  String get firewall_stateProtected;
+
+  /// Adopt an external firewall rule into 1Panel management.
+  ///
+  /// In en, this message translates to:
+  /// **'Adopt Rule'**
+  String get firewall_adoptRule;
+
+  /// Explanation of rule adoption.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit or delete this rule in the app after adoption'**
+  String get firewall_adoptRuleHint;
+
+  /// Confirmation before adopting an external firewall rule.
+  ///
+  /// In en, this message translates to:
+  /// **'Let 1Panel manage this external rule on the server?'**
+  String get firewall_adoptRuleConfirm;
+
+  /// Label for an uneditable firewall rule.
+  ///
+  /// In en, this message translates to:
+  /// **'This rule is read-only'**
+  String get firewall_readOnlyRule;
+
+  /// Why a firewall rule cannot be changed.
+  ///
+  /// In en, this message translates to:
+  /// **'Protected or unsupported rules cannot be changed in the app'**
+  String get firewall_readOnlyRuleHint;
+
+  /// Firewall inventory notice for an unavailable IP family.
+  ///
+  /// In en, this message translates to:
+  /// **'Some IP versions are unavailable on this server.'**
+  String get firewall_noticeFamilyUnavailable;
+
+  /// Firewall inventory notice for scope mismatch.
+  ///
+  /// In en, this message translates to:
+  /// **'The active rule scope differs from the default scope.'**
+  String get firewall_noticeDefaultScopeMismatch;
+
+  /// Firewall inventory notice for inactive managed scopes.
+  ///
+  /// In en, this message translates to:
+  /// **'Some managed rule scopes are inactive.'**
+  String get firewall_noticeManagedScopeInactive;
+
+  /// Firewall inventory notice for unmanaged active scopes.
+  ///
+  /// In en, this message translates to:
+  /// **'Active rules exist outside the managed scope.'**
+  String get firewall_noticeUnmanagedScopes;
+
+  /// Firewall inventory notice for runtime and permanent rule mismatch.
+  ///
+  /// In en, this message translates to:
+  /// **'Running and saved firewall rules differ.'**
+  String get firewall_noticeRuntimeMismatch;
+
+  /// Firewall inventory notice about the default policy.
+  ///
+  /// In en, this message translates to:
+  /// **'The default firewall policy may affect these rules.'**
+  String get firewall_noticeDefaultPolicy;
+
+  /// Firewall inventory notice for a missing managed scope.
+  ///
+  /// In en, this message translates to:
+  /// **'A managed rule scope is missing.'**
+  String get firewall_noticeManagedScopeMissing;
+
   /// Enabled status label.
   ///
   /// In en, this message translates to:
@@ -19272,6 +19416,42 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Database Management'**
   String get databases_management;
+
+  /// Database web manager missing dialog title.
+  ///
+  /// In en, this message translates to:
+  /// **'{name} is not installed'**
+  String databases_managerNotInstalled(String name);
+
+  /// Database web manager installation guidance.
+  ///
+  /// In en, this message translates to:
+  /// **'Install this database management tool from the App Store first.'**
+  String get databases_managerInstallPrompt;
+
+  /// Open App Store action for a missing database manager.
+  ///
+  /// In en, this message translates to:
+  /// **'Go to App Store'**
+  String get databases_goToAppStore;
+
+  /// Database manager server address lookup failure.
+  ///
+  /// In en, this message translates to:
+  /// **'Unable to get the server address'**
+  String get databases_serverAddressUnavailable;
+
+  /// Database web manager browser launch failure.
+  ///
+  /// In en, this message translates to:
+  /// **'Unable to open {name}'**
+  String databases_openManagerFailed(String name);
+
+  /// In-app database manager web page load failure.
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to load the web page'**
+  String get databases_webPageLoadFailed;
 
   /// Database action title for changing password.
   ///
